@@ -1,8 +1,6 @@
-import { Todo } from "../types/TodoType"
-import React from 'react';
 import {ITodoItem} from '../interfaces/ITodoList';
 
-const TodoItem: React.FC<ITodoItem> = ({ todo, changeActivate }) => {
+const TodoItem = ({ todo, changeActivate }: ITodoItem) => {
     const { id, text, activate } = todo
 
     const handleActivate = () => {
